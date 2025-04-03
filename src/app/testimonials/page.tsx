@@ -104,26 +104,31 @@ export default function TestimonialsSection() {
             <motion.div
               key={testimonials[activeIndex].id}
               custom={direction}
-              initial={(direction) => ({
-                x: direction > 0 ? 1000 : -1000,
-                opacity: 0,
-              })}
-              animate={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.4 },
+              variants={{
+                enter: (direction: number) => ({
+                  x: direction > 0 ? 1000 : -1000,
+                  opacity: 0
+                }),
+                center: {
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    x: { type: "spring", stiffness: 300, damping: 30 },
+                    opacity: { duration: 0.4 },
+                  }
                 },
+                exit: (direction: number) => ({
+                  x: direction > 0 ? -1000 : 1000,
+                  opacity: 0,
+                  transition: {
+                    x: { type: "spring", stiffness: 300, damping: 30 },
+                    opacity: { duration: 0.4 },
+                  }
+                })
               }}
-              exit={(direction) => ({
-                x: direction > 0 ? -1000 : 1000,
-                opacity: 0,
-                transition: {
-                  x: { type: "spring", stiffness: 300, damping: 30 },
-                  opacity: { duration: 0.4 },
-                },
-              })}
+              initial="enter"
+              animate="center"
+              exit="exit"
               className="w-full h-[34rem]"
             >
               <TestimonialCard testimonial={testimonials[activeIndex]} />
@@ -238,7 +243,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <p className="text-xl md:text-2xl leading-relaxed text-slate-200 mb-8">
-              "{testimonial.quote}"
+              &#34;{testimonial.quote}&#34;
             </p>
           </motion.div>
         </div>

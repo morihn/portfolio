@@ -1,6 +1,6 @@
 "use client";
 
-import { Separator } from "@/components/ui/separator";
+import {Separator} from "@/components/ui/separator";
 
 import * as React from "react";
 import {
@@ -13,10 +13,10 @@ import {
   FolderGit2,
 } from "lucide-react";
 
-import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
-import { NavUser } from "@/components/nav-user";
-import { TeamSwitcher } from "@/components/team-switcher";
+import {NavMain} from "@/components/nav-main";
+import {NavProjects} from "@/components/nav-projects";
+import {NavUser} from "@/components/nav-user";
+import {TeamSwitcher} from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
@@ -35,10 +35,10 @@ const data = {
   },
   teams: [
     {
-      name: "DigiBrand Co",
-      logo: "https://digibrandco.com/_next/image?url=%2Fdigibrand_logo.jpg&w=3840&q=75",
-      plan: "Digibrandco.com",
-      url: "https://digibrandco.com",
+      name: "HN Core",
+      logo: "https://hncore.website/logo.png",
+      plan: "Enterprise",
+      url: "https://www.hncore.website/",
     },
   ],
   navMain: [
@@ -114,21 +114,21 @@ const data = {
   ],
 };
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({...props}: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <TeamSwitcher teams={data.teams}/>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
-        <Separator />
-        <NavProjects projects={data.projects} />
+        <NavMain items={data.navMain}/>
+        <Separator/>
+        <NavProjects projects={data.projects}/>
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={data.user} />
+        <NavUser user={data.user}/>
       </SidebarFooter>
-      <SidebarRail />
+      <SidebarRail/>
     </Sidebar>
   );
 }

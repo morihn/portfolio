@@ -64,7 +64,6 @@ export const conceptProjects: Project[] = [
     description: "Know more about your favorite games and download them",
     image: "https://cdn.dribbble.com/userupload/16114473/file/original-fd07ed81f4e946718c76faa5c2a87527.png?resize=2048x1497&vertical=center",
     technologies: ["Figma"],
-    demoUrl: "",
     demoUrl: "https://www.figma.com/design/k8abSlW2Rpyts00TwvVwnH/Game-Land?node-id=0-1&t=M1WzmCFp6HhZZPZI-1",
   },
   {

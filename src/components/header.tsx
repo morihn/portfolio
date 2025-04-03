@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 
-function capitalizeFirstLetter(val) {
+function capitalizeFirstLetter(val: unknown) {
   return String(val).charAt(0).toUpperCase() + String(val).slice(1);
 }
 export default function Header() {

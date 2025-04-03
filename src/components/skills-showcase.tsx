@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-  ChevronRight,
   Code,
   Figma,
   Framer,
@@ -13,7 +12,6 @@ import {
   Trello,
   Computer,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -114,6 +112,7 @@ const skillsData = {
 };
 
 export default function SkillsShowcase() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [activeCategory, setActiveCategory] = useState("design_tools");
 
   const getProficiencyValue = (proficiency: string) => {
@@ -196,7 +195,6 @@ export default function SkillsShowcase() {
                       name={tool.name}
                       icon={tool.icon}
                       color={tool.color}
-                      years={tool.years}
                       usage={tool.usage}
                     >
                       <ProficiencyBar

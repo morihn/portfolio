@@ -11,7 +11,6 @@ import {
   Award,
   Calendar,
   FileText,
-  BookOpen,
  } from "lucide-react";
 import Image from "next/image";
 import { cn } from '@/lib/utils'; 
@@ -196,30 +195,6 @@ export default function EducationSection() {
                                         </motion.li>
                                       )
                                     )}
-                                  </ul>
-                                </div>
-                              )}
-
-                            {education.courses &&
-                              education.courses.length > 0 && (
-                                <div>
-                                  <div className="flex items-center gap-2 mb-1">
-                                    <BookOpen className="h-4 w-4 text-blue-600" />
-                                    <span className="font-medium text-gray-700">
-                                      Key Courses
-                                    </span>
-                                  </div>
-                                  <ul className="list-disc list-inside ml-6 text-gray-600 space-y-1">
-                                    {education.courses.map((course, i) => (
-                                      <motion.li
-                                        key={i}
-                                        initial={{ opacity: 0, x: -10 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: i * 0.1 }}
-                                      >
-                                        {course}
-                                      </motion.li>
-                                    ))}
                                   </ul>
                                 </div>
                               )}

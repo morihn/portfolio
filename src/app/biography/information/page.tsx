@@ -68,7 +68,7 @@ export default function Portfolio() {
     ],
   };
 
-  
+
 
   return (
     <div
@@ -97,7 +97,7 @@ export default function Portfolio() {
               {personalInfo.availability}
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="block">Hello, I'm</span>
+              <span className="block">Hello, I&#39;m</span>
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
                 {personalInfo.name}
               </span>
@@ -135,6 +135,8 @@ export default function Portfolio() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
+                  {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                  {/*@ts-expect-error*/}
                   {socialIcons[link.icon.toLowerCase()]}
                 </motion.a>
               ))}
