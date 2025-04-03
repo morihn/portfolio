@@ -1,0 +1,59 @@
+{
+  "personal": {
+    "name": "Morteza Rahimi",
+    "title": "Senior UI/UX Designer & Frontend Developer",
+    "bio": "Passionate digital designer with 5+ years of experience creating intuitive user experiences and pixel-perfect interfaces. Specialized in bridging the gap between design and development to deliver cohesive digital products.",
+    "location": "Tehran, Iran",
+    "email": "hello@morteza.design",
+    "phone": "+98 912 345 6789",
+    "availability": "Available for freelance & full-time roles",
+    "image": "/assets/images/profile.jpg",
+    "social_links": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/morteza",
+        "icon": "linkedin"
+      },
+      {
+        "platform": "Dribbble",
+        "url": "https://dribbble.com/morteza",
+        "icon": "dribbble"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/morteza",
+        "icon": "github"
+      },
+      {
+        "platform": "Behance",
+        "url": "https://behance.net/morteza",
+        "icon": "behance"
+      }
+    ]
+  },
+  "services": [
+    "UI/UX Design",
+    "Prototyping",
+    "Frontend Development",
+    "Design Systems",
+    "User Research",
+    "Interaction Design"
+  ],
+  "contact": {
+    "form_endpoint": "/api/contact",
+    "available_for": [
+      {
+        "type": "Freelance Projects",
+        "status": "Available"
+      },
+      {
+        "type": "Full-time Opportunities",
+        "status": "Open to offers"
+      },
+      {
+        "type": "Design Workshops",
+        "status": "Available"
+      }
+    ]
+  }
+}

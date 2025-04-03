@@ -1,0 +1,54 @@
+{
+  "featured_projects": [
+    {
+      "id": "ghatijo",
+      "name": "Ghatijo",
+      "tagline": "Premium carpet cleaning service finder",
+      "year": 2023,
+      "role": "Lead Designer & Frontend Developer",
+      "description": "A comprehensive platform connecting homeowners with professional carpet cleaning services across Iran, featuring verified reviews and instant booking.",
+      "challenge": "Create a trustworthy platform in an industry with low digital adoption.",
+      "solution": "Implemented verification badges, before/after galleries, and transparent pricing.",
+      "impact": "Increased bookings by 200% in first 6 months.",
+      "duration": "5 months",
+      "team_size": 4,
+      "technologies": ["React", "Figma", "Node.js", "MongoDB"],
+      "features": [
+        "Location-based service matching",
+        "Before/after photo verification",
+        "Real-time booking system",
+        "Service provider dashboard"
+      ],
+      "images": [
+        "/assets/projects/ghatijo/01-home.jpg",
+        "/assets/projects/ghatijo/02-search.jpg"
+      ],
+      "link": "https://ghatijo.com",
+      "testimonial": {
+        "text": "Morteza transformed our manual booking process into a seamless digital experience.",
+        "author": "Ghatijo CEO"
+      }
+    }
+  ],
+  "concept_projects": [
+    {
+      "id": "bookland",
+      "name": "BookLand",
+      "type": "Reading Platform Concept",
+      "year": 2022,
+      "description": "A modern digital reading experience with social features and personalized recommendations.",
+      "key_features": [
+        "Customizable reading interface",
+        "Community annotations",
+        "Reading challenges"
+      ],
+      "design_process": [
+        "Competitive analysis of 8 reading apps",
+        "User interviews with 15 avid readers",
+        "3 rounds of usability testing"
+      ],
+      "figma_url": "https://figma.com/bookland",
+      "awards": ["2022 Behance UI Design Award"]
+    }
+  ]
+}

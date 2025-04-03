@@ -1,0 +1,36 @@
+[
+  {
+    "company": "DigiBrand",
+    "position": "Senior UI/UX Designer",
+    "period": "2021 - Present",
+    "location": "Tehran, Iran (Remote)",
+    "responsibilities": [
+      "Lead designer for 10+ client projects",
+      "Established design system for main product",
+      "Conducted user research sessions",
+      "Mentored junior designers"
+    ],
+    "achievements": [
+      "Increased client satisfaction scores by 35%",
+      "Reduced development time by implementing design system",
+      "Featured on Behance for banking app design"
+    ],
+    "projects": ["Banking App", "E-commerce Platform", "SAAS Dashboard"]
+  },
+  {
+    "company": "ToorangCo",
+    "position": "UI Developer",
+    "period": "2019 - 2021",
+    "location": "Tehran, Iran",
+    "responsibilities": [
+      "Implemented designs into responsive code",
+      "Collaborated with backend team",
+      "Optimized frontend performance"
+    ],
+    "technologies": ["React", "SCSS", "REST APIs"],
+    "achievements": [
+      "Improved page load speed by 40%",
+      "Implemented dark mode feature"
+    ]
+  }
+]

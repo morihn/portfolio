@@ -1,0 +1,27 @@
+{
+  "awards": [
+    {
+      "title": "Best UX Design 2023",
+      "organization": "Iran Digital Awards",
+      "year": 2023,
+      "project": "Ghatijo",
+      "description": "Recognized for innovative service design in local services category"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Designing for First-Time Internet Users",
+      "publisher": "UX Collective",
+      "date": "Jan 2023",
+      "link": "https://uxdesign.cc/designing-first-time-users"
+    }
+  ],
+  "speaking": [
+    {
+      "event": "Tehran Design Week",
+      "title": "Bridging the Design-Development Gap",
+      "year": 2022,
+      "type": "Workshop"
+    }
+  ]
+}

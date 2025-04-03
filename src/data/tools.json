@@ -1,0 +1,44 @@
+{
+  "design_tools": [
+    {
+      "name": "Figma",
+      "proficiency": "Expert",
+      "years": 4,
+      "usage": "Primary design tool for UI/UX work"
+    },
+    {
+      "name": "Adobe XD",
+      "proficiency": "Advanced",
+      "years": 3
+    },
+    {
+      "name": "Spline",
+      "proficiency": "Intermediate",
+      "usage": "3D design and prototyping"
+    }
+  ],
+  "prototyping_tools": [
+    "Framer",
+    "ProtoPie",
+    "Principle"
+  ],
+  "development_tools": [
+    {
+      "name": "VS Code",
+      "extensions": [
+        "ESLint",
+        "Prettier",
+        "GitLens"
+      ]
+    },
+    "Git/GitHub",
+    "Chrome DevTools",
+    "Webpack"
+  ],
+  "other_tools": [
+    "Jira",
+    "Notion",
+    "Miro",
+    "Zeplin"
+  ]
+}

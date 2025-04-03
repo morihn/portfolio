@@ -1,0 +1,32 @@
+[
+  {
+    "id": "digibrand-testimonial",
+    "client": {
+      "name": "Sara Ahmadi",
+      "position": "Product Director",
+      "company": "DigiBrand",
+      "image": "/assets/testimonials/sara.jpg",
+      "linkedin": "https://linkedin.com/in/sara-ahmadi"
+    },
+    "project": "Banking App Redesign",
+    "quote": "Morteza brought exceptional attention to detail to our banking app redesign. His user flows reduced support calls by 30% and his design system implementation saved hundreds of development hours.",
+    "rating": 5,
+    "date": "March 2023"
+  },
+  {
+    "id": "toorang-testimonial",
+    "client": {
+      "name": "Ali Rezaei",
+      "position": "CTO",
+      "company": "ToorangCo",
+      "image": "/assets/testimonials/ali.jpg"
+    },
+    "project": "E-commerce Platform",
+    "quote": "The checkout flow Morteza designed converted 22% better than our previous version. He understands both design principles and technical constraints better than any designer we've worked with.",
+    "metrics": [
+      "22% higher conversion",
+      "40% faster load time"
+    ],
+    "date": "November 2022"
+  }
+]

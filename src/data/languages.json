@@ -1,0 +1,19 @@
+[
+  {
+    "language": "Persian (Farsi)",
+    "proficiency": "Native",
+    "level": 100
+  },
+  {
+    "language": "English",
+    "proficiency": "Professional",
+    "level": 90,
+    "certification": "IELTS 7.5 (2020)"
+  },
+  {
+    "language": "German",
+    "proficiency": "Basic",
+    "level": 40,
+    "status": "Learning"
+  }
+]

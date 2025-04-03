@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "name": "User Experience",
+      "skills": [
+        { "name": "User Research", "level": 90 },
+        { "name": "Information Architecture", "level": 85 },
+        { "name": "Wireframing", "level": 95 },
+        { "name": "Usability Testing", "level": 80 }
+      ]
+    },
+    {
+      "name": "User Interface",
+      "skills": [
+        { "name": "Visual Design", "level": 92 },
+        { "name": "Design Systems", "level": 88 },
+        { "name": "Micro-interactions", "level": 85 },
+        { "name": "Responsive Design", "level": 90 }
+      ]
+    },
+    {
+      "name": "Frontend Development",
+      "skills": [
+        { "name": "HTML/CSS", "level": 95 },
+        { "name": "JavaScript", "level": 85 },
+        { "name": "React", "level": 80 },
+        { "name": "Tailwind CSS", "level": 90 }
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "skills": [
+        { "name": "Client Communication", "level": 90 },
+        { "name": "Problem Solving", "level": 95 },
+        { "name": "Team Leadership", "level": 85 }
+      ]
+    }
+  ]
+}

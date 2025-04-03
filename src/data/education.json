@@ -1,0 +1,35 @@
+[
+  {
+    "degree": "Master of Design (MDes)",
+    "major": "Interaction Design",
+    "institution": "Tehran University of Art",
+    "location": "Tehran, Iran",
+    "year": "2020 - 2022",
+    "thesis": "Micro-interactions in Mobile UX",
+    "achievements": [
+      "Graduated with honors",
+      "Published research on gesture-based navigation"
+    ]
+  },
+  {
+    "degree": "Bachelor of Software Engineering",
+    "institution": "Sharif University of Technology",
+    "location": "Tehran, Iran",
+    "year": "2015 - 2019",
+    "courses": [
+      "Human-Computer Interaction",
+      "Web Development",
+      "Data Visualization"
+    ]
+  },
+  {
+    "degree": "UX Design Professional Certificate",
+    "institution": "Google Career Certificates",
+    "year": "2021",
+    "skills_gained": [
+      "User research methods",
+      "Wireframing & prototyping",
+      "Accessibility standards"
+    ]
+  }
+]
