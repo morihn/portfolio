@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import emailjs from "@emailjs/browser";
 import {
   Github,
   Linkedin,
@@ -15,6 +16,7 @@ import {
   MapPin,
   Send,
   CheckCircle,
+  AlertCircle,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -42,6 +44,8 @@ const formSchema = z.object({
 
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -53,16 +57,42 @@ export default function ContactPage() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // In a real application, you would send the form data to your backend
-    console.log(values);
-    setIsSubmitted(true);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+    setIsError(false);
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
+    try {
+      // Replace these with your actual EmailJS service ID, template ID, and public key
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "your_service_id";
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "your_template_id";
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "your_public_key";
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: values.name,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
+        },
+        publicKey
+      );
+
+      setIsSubmitted(true);
       form.reset();
-    }, 3000);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setIsError(true);
+    } finally {
+      setIsLoading(false);
+
+      // Reset submission status after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setIsError(false);
+      }, 3000);
+    }
   }
 
   const containerVariants = {
@@ -153,6 +183,19 @@ export default function ContactPage() {
                   Thank you for reaching out. I&apos;ll get back to you shortly.
                 </p>
               </motion.div>
+            ) : isError ? (
+              <motion.div
+                className="flex flex-col items-center justify-center py-12 text-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ type: "spring", stiffness: 100 }}
+              >
+                <AlertCircle className="h-16 w-16 text-destructive mb-4" />
+                <h3 className="text-xl font-semibold mb-2">Error Sending Message</h3>
+                <p className="text-muted-foreground">
+                  Something went wrong. Please try again later.
+                </p>
+              </motion.div>
             ) : (
               <Form {...form}>
                 <form
@@ -227,8 +270,14 @@ export default function ContactPage() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Button type="submit" className="w-full">
-                      <Send className="mr-2 h-4 w-4" /> Send Message
+                    <Button type="submit" className="w-full" disabled={isLoading}>
+                      {isLoading ? (
+                        "Sending..."
+                      ) : (
+                        <>
+                          <Send className="mr-2 h-4 w-4" /> Send Message
+                        </>
+                      )}
                     </Button>
                   </motion.div>
                 </form>

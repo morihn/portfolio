@@ -43,7 +43,7 @@ export default function Portfolio() {
     email: "morteza.hassannezhad@gmail.com",
     phone: "+98 938 843 2463",
     availability: "Available for freelance & full-time roles",
-    image: "/Mori.jpeg?height=200&width=200",
+    image: "/Mori.JPEG?height=200&width=200",
     social_links: [
       {
         platform: "LinkedIn",

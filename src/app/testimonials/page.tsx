@@ -58,9 +58,9 @@ const testimonials: Testimonial[] = [
       company: "Kayer Agency",
       image: "/rostami.jpg",
     },
-    quote:
-      "He is not only a highly skilled and reliable colleague, but also someone who brings genuine passion to his work. His dedication to growth and his commitment to every project are truly inspiring. He cares deeply about the team's success and always goes the extra mile to deliver excellence. Working with someone so driven and compassionate is both a privilege and a pleasure.",
+    quote: "He is not only a highly skilled and reliable colleague, but also someone who brings genuine passion to his work. His dedication to growth and his commitment to every project are truly inspiring. He cares deeply about the team's success and always goes the extra mile to deliver excellence. Working with someone so driven and compassionate is both a privilege and a pleasure.",
     date: "November 2024",
+    project: ""
   },
 ];
 
@@ -80,8 +80,9 @@ export default function TestimonialsSection() {
     );
   };
 
+
   return (
-    <div className="w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center justify-between">
+    <div className="h-full w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white py-10 px-4 md:px-8 lg:px-16 flex flex-col items-center justify-between">
       <div className="max-w-7xl w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -93,7 +94,7 @@ export default function TestimonialsSection() {
             Client Testimonials
           </h2>
           <p className="text-slate-300 max-w-2xl mx-auto text-lg">
-            Don't just take my word for it. Here's what clients have to say
+            Don&#39;t just take my word for it. Here&#39;s what clients have to say
             about working with me.
           </p>
         </motion.div>
