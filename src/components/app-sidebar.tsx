@@ -5,7 +5,7 @@ import {Separator} from "@/components/ui/separator";
 import * as React from "react";
 import {
   Frame,
-  PieChart,
+  Contact,
   User,
   Info,
   Star,
@@ -109,7 +109,7 @@ const data = {
     {
       name: "Contact",
       url: "/contact",
-      icon: PieChart,
+      icon: Contact,
     },
   ],
 };
