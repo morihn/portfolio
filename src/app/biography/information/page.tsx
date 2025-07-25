@@ -57,7 +57,7 @@ export default function Portfolio() {
       },
       {
         platform: "GitHub",
-        url: "https://github.com/morteza",
+        url: "https://github.com/morihn",
         icon: "github",
       },
       {
